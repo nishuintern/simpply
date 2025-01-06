@@ -1,87 +1,71 @@
-// import React from "react";
-// import { Drawer, Toolbar, List, ListItem, ListItemText, Typography } from "@mui/material";
-
-// const SubSidebar = () => {
-//   const menuItems = [
-//     "Order Dispatch",
-//     "Order Acknowledgement",
-//     "Invoice",
-//     "Buyer Mapping Discount",
-//     "Item Catalog",
-//     "PO Status",
-//     "Invoice Dashboard",
-//     "My Invoices",
-//   ];
-
-//   return (
-//     <Drawer variant="permanent" sx={{ width: 240, "& .MuiDrawer-paper": { width: 240 } }}>
-//       <Toolbar />
-//       <List>
-//         <ListItem>
-//           <Typography variant="h6">Order Management</Typography>
-//         </ListItem>
-//         {menuItems.map((item, index) => (
-//           <ListItem button key={index}>
-//             <ListItemText primary={item} />
-//           </ListItem>
-//         ))}
-//       </List>
-//     </Drawer>
-//   );
-// };
-
-// export default SubSidebar;
-
 import React from "react";
-import {
-  Drawer,
-  List,
-  ListItem,
-  ListItemText,
-  Toolbar,
-  Box,
-} from "@mui/material";
+import { Link } from "react-router";
+
 
 const SubSidebar = () => {
-  const subMenuItems = [
-    "Order Dispatch",
-    "Order Acknowledgement",
-    "Invoice",
-    "Buyer Mapping Discount",
-    "Item Catalog",
-    "PO Status",
-    "Invoice Dashboard",
-    "My Invoices",
-  ];
-
+  
   return (
-    <Drawer
-      variant="permanent"
-      sx={{
-        width: 240,
-        flexShrink: 0,
-        "& .MuiDrawer-paper": {
-          width: 240,
-          boxSizing: "border-box",
-          backgroundColor: "#f4f5f8",
-          color: "#0c1d4d",
-        },
-      }}
-    >
-      <Toolbar />
-      <Box sx={{ overflow: "auto" }}>
-        <List>
-          {subMenuItems.map((item, index) => (
-            <ListItem button key={index}>
-              <ListItemText
-                primary={item}
-                primaryTypographyProps={{ fontSize: "14px" }}
-              />
-            </ListItem>
-          ))}
-        </List>
-      </Box>
-    </Drawer>
+   <>
+   <div id="subSidebar0" className="sub-sidebar d-md-block d-lg-block d-sm-none">
+            <span className="ps-3 pt-5 title-text">Order Management</span>
+            <hr />
+            <ul className="nav flex-column">
+              <li className="nav-item">
+                <Link
+                  className="nav-link active"
+                  to="/html/OrderManagement/OrderDispatch.html"
+                  >Order Dispatch</Link
+                >
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/html/OrderManagement/OrderAck.html"
+                  >Order Acknowledgement</Link
+                >
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/html/OrderManagement/Invoice.html"
+                  >Invoice</Link
+                >
+              </li>
+              <li className="nav-item">
+                <Link
+                  className="nav-link"
+                  to="/html/OrderManagement/BuyerMapping.html"
+                  >Buyer Mapping Discount</Link
+                >
+              </li>
+              <li className="nav-item">
+                <Link
+                  className="nav-link"
+                  to="/html/OrderManagement/ItemCatalog.html"
+                  >Item Catalog</Link
+                >
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/html/OrderManagement/Item.html"
+                  >Item</Link
+                >
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/html/OrderManagement/PoStatus.html"
+                  >PO Status</Link
+                >
+              </li>
+              <li className="nav-item">
+                <Link
+                  className="nav-link"
+                  to="/html/OrderManagement/InvoiceDashboard.html"
+                  >Invoice Dashboard</Link
+                >
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/html/OrderManagement/MyInvoices.html"
+                  >My Invoice</Link
+                >
+              </li>
+            </ul>
+          </div>
+   </>
   );
 };
 

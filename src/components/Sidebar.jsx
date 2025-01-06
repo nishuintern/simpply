@@ -1,115 +1,96 @@
-// import React from "react";
-// import { Drawer, List, ListItem, ListItemText, Toolbar, Box } from "@mui/material";
-// import { Divider } from "@mui/material";
-// import {
-//   Dashboard,
-//   ShoppingCart,
-//   Settings,
-//   Receipt,
-//   List as ListIcon,
-// } from "@mui/icons-material";
-
-// const Sidebar = () => {
-//   const menuItems = [
-//     { text: "Dashboard", icon: <Dashboard /> },
-//     { text: "Order Management", icon: <Receipt /> },
-//     { text: "Quotation Details", icon: <ShoppingCart /> },
-//     { text: "Reverse Auction", icon: <ListIcon /> },
-//     { text: "Auction Engine", icon: <ListIcon /> },
-//     { text: "Request For Proposal", icon: <ListIcon /> },
-//     { text: "Task Manager", icon: <ListIcon /> },
-//     { text: "Setting", icon: <Settings /> },
-//   ];
-
-//   return (
-//     <Drawer
-//       variant="permanent"
-//       sx={{
-//         width: 240,
-//         flexShrink: 1,
-//         "& .MuiDrawer-paper": {
-//           width: 240,
-//           boxSizing: "border-box",
-//           backgroundColor: "#0c1d4d",
-//           color: "white",
-//         },
-//       }}
-//     >
-//       <Toolbar />
-//       <Box sx={{ overflow: "auto" }}>
-//         <List>
-//           {menuItems.map((item, index) => (
-//             <ListItem button key={index}>
-//               <Box sx={{ display: "flex", alignItems: "center", color: "white" }}>
-//                 {item.icon}
-//                 <ListItemText
-//                   primary={item.text}
-//                   sx={{ ml: 2, fontSize: "14px" }}
-//                   primaryTypographyProps={{ fontSize: "14px" }}
-//                 />
-//               </Box>
-//             </ListItem>
-//           ))}
-//         </List>
-//         <Divider />
-//       </Box>
-//     </Drawer>
-//   );
-// };
-
-// export default Sidebar;
-
 import React from "react";
-import {
-  Drawer,
-  List,
-  ListItem,
-  ListItemText,
-  Toolbar,
-  Box,
-} from "@mui/material";
-import { Dashboard, Settings } from "@mui/icons-material";
+import { Link } from "react-router";
 
-const Sidebar = ({ onMenuClick }) => {
-  const menuItems = [
-    { text: "Order Management", icon: <Dashboard /> },
-    { text: "Settings", icon: <Settings /> },
-  ];
 
+const Sidebar = () => {
   return (
-    <Drawer
-      variant="permanent"
-      sx={{
-        width: 240,
-        flexShrink: 0,
-        "& .MuiDrawer-paper": {
-          width: 240,
-          boxSizing: "border-box",
-          backgroundColor: "#0c1d4d",
-          color: "white",
-        },
-      }}
-    >
-      <Toolbar />
-      <Box sx={{ overflow: "auto" }}>
-        <List>
-          {menuItems.map((item, index) => (
-            <ListItem button key={index} onClick={() => onMenuClick(item.text)}>
-              <Box
-                sx={{ display: "flex", alignItems: "center", color: "white" }}
-              >
-                {item.icon}
-                <ListItemText
-                  primary={item.text}
-                  sx={{ ml: 2 }}
-                  primaryTypographyProps={{ fontSize: "14px" }}
-                />
-              </Box>
-            </ListItem>
-          ))}
-        </List>
-      </Box>
-    </Drawer>
+   <>
+   <aside className="sidebar d-sm-none d-md-none d-lg-flex">
+        <div className="logo ">
+          <div className="logo-container ">
+            <img src="./assets/icons/newton icon copy 1.svg" alt="Company Logo" />
+            <h3 className='text-white'>Simplify</h3>
+          </div>
+        </div>
+        <nav className='mt-5 d-flex align-items-start justify-content-start'>
+          <ul>
+            <li>
+              <Link to="/html/index.html">
+                <div className="menu-item active">
+                  <img src="./assets/icons/iconamoon_home@2x.svg" alt="Dashboard" />
+                  <span>Dashboard</span>
+                </div>
+              </Link>
+              <img
+                src="./assets/icons/Glyph_ undefined 1.svg"
+                alt="Toggle Menu"
+                className="toggle-img"
+              />
+            </li>
+            <li>
+              <Link to="/html/OrderManagement/OrderDispatch.html">
+                <div className="menu-item">
+                  <img
+                    src="./assets/icons/icon-park-outline_transaction-order.svg"
+                    alt="Order Management"
+                  />
+
+                  <span>Order Management</span>
+                </div>
+              </Link>
+            </li>
+            <li>
+              <Link to="/html/Quotation/QuotationDetails.html">
+                <div className="menu-item">
+                  <img src="./assets/icons/Checkout.svg" alt="Quotation" />
+                  <span>Quotation Details</span>
+                </div>
+              </Link>
+            </li>
+            <li>
+              <Link to="/html/ReverseAuction/ReverseAuction.html">
+                <div className="menu-item">
+                  <img src="./assets/icons/Sell.svg" alt="Reverse Auction" />
+                  <span>Reverse Auction</span>
+                </div>
+              </Link>
+            </li>
+            <li>
+              <Link to="/html/LinkuctionEngine/LinkuctionEngine.html">
+                <div className="menu-item">
+                  <img src="./assets/icons/Service.svg" alt="Auction Engine" />
+                  <span>Auction Engine</span>
+                </div>
+              </Link>
+            </li>
+            <li>
+              <Link to="/html/RFP/RFP.html">
+                <div className="menu-item">
+                  <img src="./assets/icons/Invite.svg" alt="Request For Proposal" />
+                  <span>Request For Proposal</span>
+                </div>
+              </Link>
+            </li>
+            <li>
+              <Link to="/html/TaskManager/TaskManager.html">
+                <div className="menu-item">
+                  <img src="./assets/icons/Task.svg" alt="Task Manager" />
+                  <span>Task Manager</span>
+                </div>
+              </Link>
+            </li>
+            <li>
+              <Link to="/html/Setting/UserTenantMapping.html">
+                <div className="menu-item">
+                  <img src="./assets/icons/uil_setting.png" alt="Setting" />
+                  <span>Setting</span>
+                </div>
+              </Link>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+   </>
   );
 };
 
