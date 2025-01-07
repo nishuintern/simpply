@@ -1,10 +1,11 @@
 import { Link } from "react-router";
 import React from "react";
+import header from '../css/Header.module.css';
 const Header = () => {
   return (
     <>
     <header
-        className="d-flex justify-content-end"
+        className={`${header}`}
       >
         <div className="d-lg-none d-md-flex d-sm-flex">
           <img src="./assets/icons/newton icon copy 1.svg" alt="Company" />
@@ -42,7 +43,6 @@ const Header = () => {
             tabindex="-1"
             id="offcanvasResponsive"
             aria-labelledby="offcanvasResponsiveLabel"
-            
           >
             <div className="offcanvas-header">
               <img src="./assets/icons/newton icon copy 1.svg" alt="" />
@@ -199,23 +199,19 @@ const Header = () => {
                 <Link
                   className="submenu"
                   to="/html/Dashboard/User/PartyProfile.html"
-                  >My Profile</Link
-                >
+                  >My Profile</Link>
                 <Link
                   className="submenu"
                   to="/html/Dashboard/User/UserAlertMapping.html"
-                  >User Alert Mapping</Link
-                >
+                  >User Alert Mapping</Link>
                 <Link
                   className="submenu"
                   to="/html/Dashboard/User/LinklertConfig.html"
-                  >Alert Configuration</Link
-                >
+                  >Alert Configuration</Link>
                 <Link
                   className="submenu"
                   to="/html/Dashboard/User/SchedularConfig.html"
-                  >Scheduler Configuration</Link
-                >
+                  >Scheduler Configuration </Link>
                 <Link className="submenu" to="/html/loginForm/Login.html">Logout</Link>
               </div>
             </div>
