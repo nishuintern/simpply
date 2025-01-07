@@ -20,8 +20,8 @@ const OrderTable = () => {
   }));
 
   return (
-    <TableContainer component={Paper}>
-      <Table>
+    <TableContainer className="table table-responsive" component={Paper}>
+      <Table >
         <TableHead>
           <TableRow>
             <TableCell>Customer Name</TableCell>
@@ -36,18 +36,18 @@ const OrderTable = () => {
           {rows.map((row, index) => (
             <TableRow key={index}>
               <TableCell>{row.customerName}</TableCell>
-              <TableCell>{row.poNumber}</TableCell>
-              <TableCell>{row.date}</TableCell>
-              <TableCell>{row.validity}</TableCell>
-              <TableCell>{row.amount}</TableCell>
+              <TableCell sx={{color:'#424F9C'}}>{row.poNumber}</TableCell>
+              <TableCell sx={{color:'#424F9C'}}>{row.date}</TableCell>
+              <TableCell sx={{color:'#424F9C'}}>{row.validity}</TableCell>
+              <TableCell sx={{color:'#424F9C'}}>{row.amount}</TableCell>
               <TableCell>
-                <Button variant="contained" color="primary" size="small" sx={{ mr: 1 }}>
+                <Button variant="contained"  size="small" sx={{ mr: 1,backgroundColo:'#027EDC' }}>
                   Download
                 </Button>
-                <Button variant="contained" color="warning" size="small" sx={{ mr: 1 }}>
+                <Button variant="contained" size="small" sx={{ mr: 1,backgroundColor:'#FE660C' }}>
                   Dispatch
                 </Button>
-                <Button variant="contained" color="success" size="small">
+                <Button variant="contained" size="small" sx={{backgroundColor:'#3D9B3E'}}>
                   ASN
                 </Button>
               </TableCell>

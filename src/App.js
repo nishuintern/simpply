@@ -19,20 +19,22 @@ const App = () => {
           <SubSidebar />
 
           <div>
-          <div class="dashboard-heading">
+            <div class="dashboard-heading">
               <div class="d-flex">
                 <Link to="/html/index.html">
                   <img src="../assets/icons/Arrow back ios (2).svg" alt="" />
                 </Link>
                 <h3>Order Dispatch</h3>
               </div>
-              <Link href="" c>
-                <img to="./assets/icons/Synchronize.svg" alt="" />
+              <Link href="">
+                <img src="../assets/icons/Synchronize.svg" alt="" />
               </Link>
             </div>
-            <FilterBar />
-            <OrderTable />
-            <PaginationBar />
+            <div className="scroll-container">
+              <FilterBar />
+              <OrderTable />
+              <PaginationBar />
+            </div>
           </div>
         </div>
       </div>

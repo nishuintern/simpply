@@ -1,15 +1,14 @@
 import { Link } from "react-router";
 import React from "react";
-import header from '../css/Header.module.css';
 const Header = () => {
   return (
     <>
     <header
-        className={`${header}`}
+        className='d-flex justify-content-lg-end justify-content-md-between justify-content-sm-between p-2 col-sm-12 col-md-12'
       >
-        <div className="d-lg-none d-md-flex d-sm-flex">
+        <div className="d-lg-none d-md-flex d-sm-flex justify-content-md-between justify-content-sm-between align-items-center">
           <img src="./assets/icons/newton icon copy 1.svg" alt="Company" />
-          <span className="fs-4 m-2">Simpplify</span>
+          <span className="fs-3 m-2 text-white">Simpplify</span>
           <button
             className="bg-transparent border-0 m-1 pointer-event"
             type="button"
@@ -20,9 +19,9 @@ const Header = () => {
             <img src="./assets/icons/menu.svg" alt="" />
           </button>
         </div>
-        <nav className='d-flex'>
-          <div classNameName="dropdown me-sm-1 me-md-1 mt-sm-3 mt-md-3">
-            <button
+        <nav className='d-flex align-items-center'>
+          <div classNameName="dropdown me-sm-1 me-md-1 mt-sm-3 mt-md-3 mt-lg-5">
+            {/* <button
               classNameName="btn-togg-drop dropdown-toggle"
               type="button"
               data-bs-toggle="dropdown"
@@ -33,7 +32,11 @@ const Header = () => {
                 <li><Link className="dropdown-item" to="#">English</Link></li>
                 <li><Link className="dropdown-item" to="#">Hindi</Link></li>
               </ul>
-            </button>
+            </button> */}
+            <select name="lang" id="lang" className="lang-text border-0 text-white px-2" style={{backgroundColor:'#141D38'}}>
+              <option value="English" >English</option>
+              <option value="Hindi">Hindi</option>
+            </select>
             <div className="alert alert-info d-none d-lg-none">
               Resize your browser to show the responsive offcanvas toggle.
             </div>

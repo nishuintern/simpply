@@ -1,35 +1,35 @@
 import React from "react";
 import { Link } from "react-router";
 
-
 const Sidebar = () => {
   return (
-   <>
-   <aside className="sidebar d-sm-none d-md-none d-lg-flex">
+    <>
+      <aside className="sidebar d-sm-none d-md-none d-lg-flex">
         <div className="logo ">
           <div className="logo-container ">
-            <img src="./assets/icons/newton icon copy 1.svg" alt="Company Logo" />
-            <h3 className='text-white'>Simplify</h3>
+            <img
+              src="./assets/icons/newton icon copy 1.svg"
+              alt="Company Logo"
+            />
+            <h3 className="text-white">Simplify</h3>
           </div>
         </div>
-        <nav className='mt-5 d-flex align-items-start justify-content-start'>
+        <nav className="mt-5 d-flex align-items-center justify-content-center">
           <ul>
             <li>
               <Link to="/html/index.html">
-                <div className="menu-item active">
-                  <img src="./assets/icons/iconamoon_home@2x.svg" alt="Dashboard" />
+                <div className="menu-item">
+                  <img
+                    src="./assets/icons/iconamoon_home@2x.svg"
+                    alt="Dashboard"
+                  />
                   <span>Dashboard</span>
                 </div>
               </Link>
-              <img
-                src="./assets/icons/Glyph_ undefined 1.svg"
-                alt="Toggle Menu"
-                className="toggle-img"
-              />
             </li>
             <li>
               <Link to="/html/OrderManagement/OrderDispatch.html">
-                <div className="menu-item">
+                <div className="menu-item active">
                   <img
                     src="./assets/icons/icon-park-outline_transaction-order.svg"
                     alt="Order Management"
@@ -38,6 +38,11 @@ const Sidebar = () => {
                   <span>Order Management</span>
                 </div>
               </Link>
+              <img
+                src="./assets/icons/Glyph_ undefined 1.svg"
+                alt="Toggle Menu"
+                className="toggle-img"
+              />
             </li>
             <li>
               <Link to="/html/Quotation/QuotationDetails.html">
@@ -66,7 +71,10 @@ const Sidebar = () => {
             <li>
               <Link to="/html/RFP/RFP.html">
                 <div className="menu-item">
-                  <img src="./assets/icons/Invite.svg" alt="Request For Proposal" />
+                  <img
+                    src="./assets/icons/Invite.svg"
+                    alt="Request For Proposal"
+                  />
                   <span>Request For Proposal</span>
                 </div>
               </Link>
@@ -90,7 +98,7 @@ const Sidebar = () => {
           </ul>
         </nav>
       </aside>
-   </>
+    </>
   );
 };
 
