@@ -10,7 +10,7 @@ import {
   Button,
 } from "@mui/material";
 
-const OrderTable = () => {
+const AckOrderTable = () => {
   const rows = Array.from({ length: 10 }, (_, i) => ({
     customerName: "Indoasian",
     poNumber: `20240828NPO00000${i + 1}`,
@@ -25,10 +25,10 @@ const OrderTable = () => {
         <TableHead className="tableHead">
           <TableRow>
             <TableCell>Customer Name</TableCell>
-            <TableCell>PO No.</TableCell>
-            <TableCell>Date</TableCell>
+            <TableCell>Order No.</TableCell>
+            <TableCell>PO Date</TableCell>
             <TableCell>Validity</TableCell>
-            <TableCell>Amount</TableCell>
+            <TableCell>Order Amount</TableCell>
             <TableCell>Action</TableCell>
           </TableRow>
         </TableHead>
@@ -44,11 +44,11 @@ const OrderTable = () => {
                 <Button variant="contained"  size="small" sx={{ mr: 1,backgroundColo:'#027EDC' }}>
                   Download
                 </Button>
-                <Button variant="contained" size="small" sx={{ mr: 1,backgroundColor:'#FE660C' }}>
-                  Dispatch
+                <Button variant="contained" size="small" sx={{ mr: 1,backgroundColor:'#3D9B3E' }}>
+                  <img src="/assets/icons/flat-color-icons_ok.svg" alt="" />
                 </Button>
-                <Button variant="contained" size="small" sx={{backgroundColor:'#3D9B3E'}}>
-                  ASN
+                <Button variant="contained" size="small" sx={{backgroundColor:'#027EDC'}}>
+                  Download
                 </Button>
               </TableCell>
             </TableRow>
@@ -59,4 +59,4 @@ const OrderTable = () => {
   );
 };
 
-export default OrderTable;
+export default AckOrderTable;

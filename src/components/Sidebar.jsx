@@ -8,7 +8,7 @@ const Sidebar = () => {
         <div className="logo ">
           <div className="logo-container ">
             <img
-              src="./assets/icons/newton icon copy 1.svg"
+              src="/assets/icons/newton icon copy 1.svg"
               alt="Company Logo"
             />
             <h3 className="text-white">Simplify</h3>
@@ -17,10 +17,10 @@ const Sidebar = () => {
         <nav className="mt-5 d-flex align-items-center justify-content-center">
           <ul>
             <li>
-              <Link to="/html/index.html">
+              <Link to="/">
                 <div className="menu-item">
                   <img
-                    src="./assets/icons/iconamoon_home@2x.svg"
+                    src="/assets/icons/iconamoon_home@2x.svg"
                     alt="Dashboard"
                   />
                   <span>Dashboard</span>
@@ -31,7 +31,7 @@ const Sidebar = () => {
               <Link to="/html/OrderManagement/OrderDispatch.html">
                 <div className="menu-item active">
                   <img
-                    src="./assets/icons/icon-park-outline_transaction-order.svg"
+                    src="/assets/icons/icon-park-outline_transaction-order.svg"
                     alt="Order Management"
                   />
 
@@ -39,7 +39,7 @@ const Sidebar = () => {
                 </div>
               </Link>
               <img
-                src="./assets/icons/Glyph_ undefined 1.svg"
+                src="/assets/icons/Glyph_ undefined 1.svg"
                 alt="Toggle Menu"
                 className="toggle-img"
               />
@@ -47,7 +47,7 @@ const Sidebar = () => {
             <li>
               <Link to="/html/Quotation/QuotationDetails.html">
                 <div className="menu-item">
-                  <img src="./assets/icons/Checkout.svg" alt="Quotation" />
+                  <img src="/assets/icons/Checkout.svg" alt="Quotation" />
                   <span>Quotation Details</span>
                 </div>
               </Link>
@@ -55,7 +55,7 @@ const Sidebar = () => {
             <li>
               <Link to="/html/ReverseAuction/ReverseAuction.html">
                 <div className="menu-item">
-                  <img src="./assets/icons/Sell.svg" alt="Reverse Auction" />
+                  <img src="/assets/icons/Sell.svg" alt="Reverse Auction" />
                   <span>Reverse Auction</span>
                 </div>
               </Link>
@@ -63,7 +63,7 @@ const Sidebar = () => {
             <li>
               <Link to="/html/LinkuctionEngine/LinkuctionEngine.html">
                 <div className="menu-item">
-                  <img src="./assets/icons/Service.svg" alt="Auction Engine" />
+                  <img src="/assets/icons/Service.svg" alt="Auction Engine" />
                   <span>Auction Engine</span>
                 </div>
               </Link>
@@ -72,7 +72,7 @@ const Sidebar = () => {
               <Link to="/html/RFP/RFP.html">
                 <div className="menu-item">
                   <img
-                    src="./assets/icons/Invite.svg"
+                    src="/assets/icons/Invite.svg"
                     alt="Request For Proposal"
                   />
                   <span>Request For Proposal</span>
@@ -82,7 +82,7 @@ const Sidebar = () => {
             <li>
               <Link to="/html/TaskManager/TaskManager.html">
                 <div className="menu-item">
-                  <img src="./assets/icons/Task.svg" alt="Task Manager" />
+                  <img src="/assets/icons/Task.svg" alt="Task Manager" />
                   <span>Task Manager</span>
                 </div>
               </Link>
@@ -90,7 +90,7 @@ const Sidebar = () => {
             <li>
               <Link to="/html/Setting/UserTenantMapping.html">
                 <div className="menu-item">
-                  <img src="./assets/icons/uil_setting.png" alt="Setting" />
+                  <img src="/assets/icons/uil_setting.png" alt="Setting" />
                   <span>Setting</span>
                 </div>
               </Link>

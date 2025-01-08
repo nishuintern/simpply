@@ -1,71 +1,70 @@
 import React from "react";
-import { Link } from "react-router";
+import { NavLink } from "react-router";
 
 
 const SubSidebar = () => {
-  
   return (
-   <>
-   <div id="subSidebar0" className="sub-sidebar d-md-block d-lg-block d-sm-none">
+  <>
+  <div id="subSidebar0" className="sub-sidebar d-md-block d-lg-block d-sm-none">
             <span className="ps-3 pt-5 title-text">Order Management</span>
             <hr />
             <ul className="nav flex-column">
               <li className="nav-item">
-                <Link
-                  className="nav-link active"
-                  to="/html/OrderManagement/OrderDispatch.html"
-                  >Order Dispatch</Link
+                <NavLink
+                  className="nav-link"
+                  to="/order/dispatch"
+                  >Order Dispatch</NavLink
                 >
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/html/OrderManagement/OrderAck.html"
-                  >Order Acknowledgement</Link
+                <NavLink className="nav-link" to="/order/ack"
+                  >Order Acknowledgement</NavLink
                 >
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/html/OrderManagement/Invoice.html"
-                  >Invoice</Link
+                <NavLink className="nav-link" to="/order/invoice"
+                  >Invoice</NavLink
                 >
               </li>
               <li className="nav-item">
-                <Link
+                <NavLink
                   className="nav-link"
                   to="/html/OrderManagement/BuyerMapping.html"
-                  >Buyer Mapping Discount</Link
+                  >Buyer Mapping Discount</NavLink
                 >
               </li>
               <li className="nav-item">
-                <Link
+                <NavLink
                   className="nav-link"
-                  to="/html/OrderManagement/ItemCatalog.html"
-                  >Item Catalog</Link
+                  to="/"
+                  >Item Catalog</NavLink
                 >
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/html/OrderManagement/Item.html"
-                  >Item</Link
+                <NavLink className="nav-link" to="/"
+                  >Item</NavLink
                 >
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/html/OrderManagement/PoStatus.html"
-                  >PO Status</Link
+                <NavLink className="nav-link" to="/"
+                  >PO Status</NavLink
                 >
               </li>
               <li className="nav-item">
-                <Link
+                <NavLink
                   className="nav-link"
-                  to="/html/OrderManagement/InvoiceDashboard.html"
-                  >Invoice Dashboard</Link
+                  to="/order/dashboard"
+                  >Invoice Dashboard</NavLink
                 >
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/html/OrderManagement/MyInvoices.html"
-                  >My Invoice</Link
+                <NavLink className="nav-link" to="/"
+                  >My Invoice</NavLink
                 >
               </li>
             </ul>
           </div>
-   </>
+  </>
   );
 };
 

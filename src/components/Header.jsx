@@ -7,7 +7,7 @@ const Header = () => {
         className='d-flex justify-content-lg-end justify-content-md-between justify-content-sm-between p-2 col-sm-12 col-md-12'
       >
         <div className="d-lg-none d-md-flex d-sm-flex justify-content-md-between justify-content-sm-between align-items-center">
-          <img src="./assets/icons/newton icon copy 1.svg" alt="Company" />
+          <img src="/assets/icons/newton icon copy 1.svg" alt="Company" />
           <span className="fs-3 m-2 text-white">Simpplify</span>
           <button
             className="bg-transparent border-0 m-1 pointer-event"
@@ -16,7 +16,7 @@ const Header = () => {
             data-bs-target="#offcanvasResponsive"
             aria-controls="offcanvasResponsive"
           >
-            <img src="./assets/icons/menu.svg" alt="" />
+            <img src="/assets/icons/menu.svg" alt="" />
           </button>
         </div>
         <nav className='d-flex align-items-center'>
@@ -48,7 +48,7 @@ const Header = () => {
             aria-labelledby="offcanvasResponsiveLabel"
           >
             <div className="offcanvas-header">
-              <img src="./assets/icons/newton icon copy 1.svg" alt="" />
+              <img src="/assets/icons/newton icon copy 1.svg" alt="" />
               <h5 className="offcanvas-title m-2" id="offcanvasResponsiveLabel">
                 Simpplify
               </h5>
@@ -171,7 +171,7 @@ const Header = () => {
             <div className="user-dropdown">
               <button className="user-dropdown-btn">
                 <span>
-                  <img src="./assets/icons/help.svg" alt="Customer" />
+                  <img src="/assets/icons/help.svg" alt="Customer" />
                 </span>
               </button>
               <div className="user-dropdown-content">
@@ -183,7 +183,7 @@ const Header = () => {
             <div className="user-dropdown">
               <button className="user-dropdown-btn">
                 <span>
-                  <img src="./assets/icons/Doorbell.svg" alt="Customer" />
+                  <img src="/assets/icons/Doorbell.svg" alt="Customer" />
                 </span>
               </button>
               <div className="user-dropdown-content">
@@ -195,7 +195,7 @@ const Header = () => {
             <div className="user-dropdown">
               <button className="user-dropdown-btn">
                 <span>
-                  <img src="./assets/icons/Customer.svg" alt="Customer" />
+                  <img src="/assets/icons/Customer.svg" alt="Customer" />
                 </span>
               </button>
               <div className="user-dropdown-content">

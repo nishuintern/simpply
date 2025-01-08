@@ -2,6 +2,27 @@ header {
   background-color: #141d38;
   width: 100%;
 }
+.breadcrumb-back-icon,
+.breadcrumb-sync-icon {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  color: #3C4059;
+}
+
+.breadcrumb-heading {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin: 0;
+  color:#3C4059 ;
+}
+.breadcrumb{
+  background-color: #EEEEEE;
+  padding: 10px;
+}
+.ms-auto {
+  margin-left: auto;
+}
 
 .container-order {
   display: grid;
@@ -54,6 +75,12 @@ header {
   --pag-btn-text-lh: 15.23px;
   --search-po-card-width: 640px;
   --search-po-card-height: 273px;
+  --order-head-text-size:14px;
+  --order-head-text-weight: 600;
+  --order-head-text-lh: 21px;
+  --order-link-text-size:13px;
+  --order-link-text-weight: 400;
+  --order-link-text-lh: 18px;
 }
 
 * {
@@ -74,7 +101,7 @@ body {
   height: 100vh;
   overflow: hidden;
 }
-.scroll-container{
+.scroll-container {
   overflow-y: auto;
   height: calc(100vh - 90px);
 }
@@ -432,16 +459,45 @@ i {
 
 .sub-sidebar span {
   color: #3c4059;
-  font-weight: 600;
+  font-weight: var(--order-head-text-weight);
+  font-size: var(--order-head-text-size);
+  line-height: var(--order-head-text-lh);
 }
 
 .sub-sidebar a {
   color: #4b4b4b;
+  font-weight: var(--order-link-text-weight);
+  font-size: var(--order-link-text-size);
+  line-height: var(--order-link-text-lh);
 }
 
 .sub-sidebar a:hover {
   color: #f39c12;
+  font-weight: var(--order-link-text-weight);
+  font-size: var(--order-link-text-size);
+  line-height: var(--order-link-text-lh);
 }
 .nav-link.active {
   color: #f39c12;
+  font-weight: var(--order-link-text-weight);
+  font-size: var(--order-link-text-size);
+  line-height: var(--order-link-text-lh);
+}
+
+.sub-sidebar .active-link a {
+  color: #3c4059;
+  text-decoration: none;
+  font-weight: var(--order-link-text-weight);
+  font-size: var(--order-link-text-size);
+  line-height: var(--order-link-text-lh);
+}
+.active-link.active {
+  color: #f39c12;
+  text-decoration: none;
+  font-weight: var(--order-link-text-weight);
+  font-size: var(--order-link-text-size);
+  line-height: var(--order-link-text-lh);
+}
+.tableHead{
+  background-color: var(--table-th-bg-color);
 }
