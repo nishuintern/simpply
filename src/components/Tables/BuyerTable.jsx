@@ -7,7 +7,6 @@ import {
   TableHead,
   TableRow,
   Paper,
-  Button,
 } from "@mui/material";
 
 const BuyerTable = () => {

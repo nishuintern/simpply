@@ -36,17 +36,17 @@ const SubSidebar = () => {
               <li className="nav-item">
                 <NavLink
                   className="nav-link"
-                  to="/"
+                  to="/order/item-catalog"
                   >Item Catalog</NavLink
                 >
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link" to="/"
+                <NavLink className="nav-link" to="/order/item"
                   >Item</NavLink
                 >
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link" to="/"
+                <NavLink className="nav-link" to="/order/po-status"
                   >PO Status</NavLink
                 >
               </li>
@@ -58,7 +58,7 @@ const SubSidebar = () => {
                 >
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link" to="/"
+                <NavLink className="nav-link" to="/order/my-invoices"
                   >My Invoice</NavLink
                 >
               </li>

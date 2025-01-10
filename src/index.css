@@ -449,9 +449,9 @@ i {
   flex-direction: column;
 }
 .container-filter{
-  display: grid;
-  grid-template-columns: repeat(auto-fill,minmax(40%,1fr));
-  gap: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .lang-text,

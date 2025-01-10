@@ -26,7 +26,7 @@ const BuyerMappingDiscount = () => {
                 syncLink="/assets/icons/Synchronize.svg"
               />
               <div className="cus-ban container-filter">
-                <div>
+                <div className="align-self-lg-start">
                   <label className="m-3" for="page-size">
                     <span>Customer</span>
                     <select className="ms-4 ps-2 pe-2" name="size" id="sizeOfPage">
@@ -35,7 +35,7 @@ const BuyerMappingDiscount = () => {
                     </select>
                   </label>
                 </div>
-                <div>
+                <div className="algin-self-lg-end">
                   <label className="m-3" for="search">
                     <span className="me-4">Bank</span>
                     <select className="pe-4 ps-4" name="size" id="sizeOfPage">
