@@ -22,8 +22,7 @@ const InvoiceDashboard = () => {
               backLink="/html/index.html"
               syncLink="/assets/icons/Synchronize.svg"
             />
-
-            <div className="scroll-container">
+            <div className="scroll-container m-0">
               <InvoiceDashboardComponent />
             </div>
           </div>

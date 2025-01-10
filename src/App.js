@@ -5,6 +5,7 @@ import OrderDispatch from "./pages/OrderManagement/OrderDispatch";
 import OrderAck from "./pages/OrderManagement/OrderAck";
 import Invoice from "./pages/OrderManagement/Invoice";
 import InvoiceDashboard from "./pages/OrderManagement/InvoiceDashboard";
+import BuyerMappingDiscount from "./pages/OrderManagement/BuyerMappingDiscount";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
       <Route path="/order/ack" element={<OrderAck/>}/>
       <Route path='/order/invoice' element={<Invoice/>}/>
       <Route path="/order/dashboard" element={<InvoiceDashboard/>}/>
+      <Route path='/order/buyer' element={<BuyerMappingDiscount/>}/>
     </Routes>
     </>
   );

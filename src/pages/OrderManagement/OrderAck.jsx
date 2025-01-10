@@ -5,7 +5,7 @@ import SubSidebar from '../../components/SubSidebar'
 import Breadcrumb from '../../components/Breadcrumb'
 import FilterBar from '../../components/FilterBar'
 import PaginationBar from '../../components/PaginationBar'
-import AckOrderTable from '../../components/AckOrderTable'
+import AckOrderTable from '../../components/Tables/AckOrderTable'
 
 const OrderAck = () => {
   return (

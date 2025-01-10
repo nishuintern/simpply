@@ -4,7 +4,7 @@ import Header from '../../components/Header'
 import SubSidebar from '../../components/SubSidebar'
 import Breadcrumb from '../../components/Breadcrumb'
 import FilterBar from '../../components/FilterBar'
-import OrderTable from '../../components/OrderTable'
+import OrderTable from '../../components/Tables/OrderTable'
 import PaginationBar from '../../components/PaginationBar'
 
 const OrderDispatch = () => {

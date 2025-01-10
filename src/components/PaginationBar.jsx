@@ -4,12 +4,13 @@ import Pagination from "@mui/material/Pagination";
 
 const PaginationBar = () => {
   return (
-    <Box
+    <Box 
       sx={{
         display: "flex",
         justifyContent: "space-between",
         alignItems: "center",
         mt: 2,
+      
       }}
     >
       <Typography>Showing 1 to 10 of 10 entries</Typography>

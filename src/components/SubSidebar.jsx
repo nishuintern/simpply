@@ -5,7 +5,7 @@ import { NavLink } from "react-router";
 const SubSidebar = () => {
   return (
   <>
-  <div id="subSidebar0" className="sub-sidebar d-md-block d-lg-block d-sm-none">
+  <div id="subSidebar0" className="sub-sidebar d-md-block d-lg-block d-sm-block">
             <span className="ps-3 pt-5 title-text">Order Management</span>
             <hr />
             <ul className="nav flex-column">
@@ -29,7 +29,7 @@ const SubSidebar = () => {
               <li className="nav-item">
                 <NavLink
                   className="nav-link"
-                  to="/html/OrderManagement/BuyerMapping.html"
+                  to="/order/buyer"
                   >Buyer Mapping Discount</NavLink
                 >
               </li>

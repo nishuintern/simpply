@@ -7,7 +7,7 @@ const InvoiceDashboardTable = () => {
   return (
     <TableContainer component={Paper} sx={{ marginTop: "20px" }}>
       <Table>
-        <TableHead>
+        <TableHead className="tableHead">
           <TableRow>
             <TableCell>Dispatch ID</TableCell>
             <TableCell>Location</TableCell>

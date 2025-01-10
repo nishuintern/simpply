@@ -5,7 +5,7 @@ import SubSidebar from '../../components/SubSidebar'
 import Breadcrumb from '../../components/Breadcrumb'
 import FilterBar from '../../components/FilterBar'
 import PaginationBar from '../../components/PaginationBar'
-import InvoiceTable from '../../components/InvoiceTable'
+import InvoiceTable from '../../components/Tables/InvoiceTable'
 
 const Invoice = () => {
   return (
